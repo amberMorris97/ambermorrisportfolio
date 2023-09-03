@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.11.8",
     "babel-plugin-import": "^1.13.3",
     "buffer": "^6.0.3",

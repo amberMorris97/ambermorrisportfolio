@@ -1,4 +1,34 @@
-.header {
+.app {
+  background: black;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+.landing {
+  height: 100vh;
+  background: black;
+}
+.landing-text {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+  h1 {
+    margin: none;
+  }
+  h4 {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 540px){
+}
+
+@media screen and (min-width: 820px){
+}
+
+@media screen and (min-width: 1200px){
   ul {
     display: flex;
     list-style: none;
@@ -6,5 +36,4 @@
     justify-content: center;
     font-size: large;
   }
-
 }

@@ -1,6 +1,29 @@
-.header ul {
+.app {
+  background: black;
+  color: white; }
+
+ul {
+  list-style: none; }
+
+.landing {
+  height: 100vh;
+  background: black; }
+
+.landing-text {
+  margin-top: 50%;
   display: flex;
-  list-style: none;
-  gap: 10px;
-  justify-content: center;
-  font-size: large; }
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter; }
+  .landing-text h1 {
+    margin: none; }
+  .landing-text h4 {
+    font-size: small; }
+
+@media screen and (min-width: 1200px) {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    font-size: large; } }

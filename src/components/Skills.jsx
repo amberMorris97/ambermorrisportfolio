@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, CardContent, Grid, Typography } from '@mui/material';
+import { Link } from "react-router-dom";
 
 const Skills = () => {
 
   return (
-  <div className="skills-section">
+  <div className="skills-section" id="skills-container">
     <h1>Technical Skills</h1>
     <Grid container spacing={2}>
       <Grid item xs={12} md={6} lg={4}>

@@ -7,6 +7,7 @@ import {
   Typography,
   useMediaQuery,
   useTheme } from '@mui/material';
+import { Link } from 'react-router-dom';
 import HeaderDrawer from './HeaderDrawer.jsx';
 const PAGES = ['home', 'skills', 'projects', 'work experience', 'contact'];
 
@@ -33,7 +34,10 @@ const Header = () => {
                 indicatorColor="secondary"
               >
                 {PAGES.map((page, idx) => (
+                  <Link
+                    to="skills-container">
                   <Tab key={page} label={page} />
+                  </Link>
                 ))}
               </Tabs>
           }

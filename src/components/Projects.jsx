@@ -34,9 +34,11 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Typography>
-              Dig It
-            </Typography>
+            <Link to="/dig-it">
+              <Typography>
+                Dig It
+              </Typography>
+            </Link>
           </CardContent>
         </Card>
       </Grid>
@@ -48,9 +50,11 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Typography>
-              Blockchains Explained
-            </Typography>
+            <Link to="/blockchains-explained">
+              <Typography>
+                Blockchains Explained
+              </Typography>
+            </Link>
           </CardContent>
         </Card>
       </Grid>
@@ -62,9 +66,11 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Typography>
-              Unshiftly
-            </Typography>
+            <Link to="/unshiftly">
+              <Typography>
+                Unshiftly
+              </Typography>
+            </Link>
           </CardContent>
         </Card>
       </Grid>

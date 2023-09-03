@@ -70,7 +70,9 @@ ul {
 .work-experience {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background: black;
+  color: white; }
   .work-experience .accordion {
     display: flex;
     flex-direction: column;

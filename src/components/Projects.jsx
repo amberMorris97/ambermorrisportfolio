@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Link } from "react-router-dom";
+
+import JaneRosenzweig from './projectPages/JaneRosenzweig.jsx';
+import Landing from './Landing.jsx';
 
 const Projects = () => {
-
   return (
     <div className="project-section">
       <h1>Projects</h1>
@@ -15,9 +18,11 @@ const Projects = () => {
                 image="/static/images/placeholder.jpg"
                 title="placeholder"
               />
-              <Typography>
-                Jane Rosenzweig
-              </Typography>
+              <Link to="/jane-roszensweig-DEI-professional">
+                <Typography>
+                  Jane Rosenzweig
+                </Typography>
+              </Link>
             </CardContent>
           </Card>
         </Grid>

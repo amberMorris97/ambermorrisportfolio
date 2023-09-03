@@ -11,7 +11,7 @@ import HeaderDrawer from './HeaderDrawer.jsx';
 const PAGES = ['home', 'skills', 'projects', 'work experience', 'contact'];
 
 const Header = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'));
 

@@ -1,16 +1,22 @@
+$main-font: Source Code Pro;
 .app {
-  background: black;
   color: white;
+  font-family: $main-font;
 }
+.MuiTypography-root {
+  font-family: $main-font !important;
+}
+
 ul {
   list-style: none;
 }
 .landing {
   height: 100vh;
+  padding: 16px;
   background: black;
+  max-width: 100%;
 }
 .landing-text {
-  margin-top: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +26,80 @@ ul {
   }
   h4 {
     font-size: small;
+  }
+}
+.header {
+  max-width: 100%;
+}
+.skills-section {
+  height: 100vh;
+  max-width: 100%;
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  div {
+    justify-content: center;
+    margin: auto;
+
+    .MuiGrid-root {
+      background: '#f5f5f5';
+      border-radius: '8px';
+      box-shadow: '0 2px 4px rgba(0, 0, 0, 0.1)';
+      padding: '16px';
+    }
+    .MuiCardContent-root {
+      background: rgba(64, 64, 64, 0.5);
+    }
+    .MuiTypography-root {
+      font-family: $main-font !important;
+      color: white;
+    }
+  }
+}
+.project-section {
+  height: 100vh;
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  div {
+    justify-content: center;
+    margin: auto;
+    .MuiCardContent-root {
+      background: rgba(64, 64, 64, 0.5);
+    }
+    .MuiTypography-root {
+      font-family: $main-font !important;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+.work-experience,.contact-section {
+  color: black;
+  height: 100vh;
+  text-align: center;
+}
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .MuiAccordion-root {
+      width: 50vw;
+    }
+
+    .MuiAccordionSummary-content {
+      flex: 1 1 200px;
+      min-width: 200px;
+    }
   }
 }
 @media screen and (min-width: 540px){

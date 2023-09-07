@@ -3,7 +3,7 @@ import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
 
 import ProjectModal from './ProjectModal.jsx';
-import projectDetails from './projectDetails';
+import { projectDetails, skillsDetails } from './cardDetails';
 
 const Projects = () => {
   const [open, setOpen] = useState(false);
@@ -36,11 +36,12 @@ const Projects = () => {
             <Card sx={{ maxWidth: 345 }} id={idx}>
               <CardContent id={idx}>
                 <CardMedia
-                  sx={{ height: 140, width: 140 }}
-                  image={project.img}
+                  sx={{ height: 140, width: 300 }}
+                  image={project.main}
                   title="placeholder"
+                  id={idx}
                 />
-                  <Typography>{project.title}</Typography>
+                  <Typography id={idx}>{project.title}</Typography>
               </CardContent>
             </Card>
           </Grid>

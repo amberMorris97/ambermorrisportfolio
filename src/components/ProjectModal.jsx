@@ -13,6 +13,8 @@ const ProjectModal = ({ modalContent, handleClose, open }) => {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+    overflowY: 'auto',
+    maxHeight: '80vh',
   };
 console.log(modalContent)
   return (
@@ -21,10 +23,12 @@ console.log(modalContent)
         open={open}
         onClose={handleClose}
         >
-          <Box sx={style}>
+          <Box sx={style} className="modal-content">
             <Typography>
               {modalContent.title}
             </Typography>
+            <img
+              src={modalContent.full} />
           </Box>
         </Modal>
     </div>

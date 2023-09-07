@@ -2,12 +2,11 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
 
-import JaneRosenzweig from './projectPages/JaneRosenzweig.jsx';
 import Landing from './Landing.jsx';
 
 const Projects = () => {
   return (
-    <div className="project-section">
+    <div className="project-section" name="projects">
       <h1>Projects</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} lg={4}>
@@ -18,11 +17,10 @@ const Projects = () => {
                 image="/static/images/placeholder.jpg"
                 title="placeholder"
               />
-              <Link to="/jane-roszensweig-DEI-professional">
+
                 <Typography>
                   Jane Rosenzweig
                 </Typography>
-              </Link>
             </CardContent>
           </Card>
         </Grid>
@@ -34,11 +32,10 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Link to="/dig-it">
+
               <Typography>
                 Dig It
               </Typography>
-            </Link>
           </CardContent>
         </Card>
       </Grid>
@@ -50,11 +47,10 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Link to="/blockchains-explained">
+
               <Typography>
                 Blockchains Explained
               </Typography>
-            </Link>
           </CardContent>
         </Card>
       </Grid>
@@ -66,11 +62,10 @@ const Projects = () => {
               image="/static/images/placeholder.jpg"
               title="placeholder"
             />
-            <Link to="/unshiftly">
+
               <Typography>
                 Unshiftly
               </Typography>
-            </Link>
           </CardContent>
         </Card>
       </Grid>

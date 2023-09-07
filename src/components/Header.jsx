@@ -6,10 +6,10 @@ import {
   Toolbar,
   Typography,
   useMediaQuery,
-  useTheme } from '@mui/material';
-import { Link } from 'react-router-dom';
+  useTheme, } from '@mui/material';
+import { Link } from 'react-scroll';
 import HeaderDrawer from './HeaderDrawer.jsx';
-const PAGES = ['home', 'skills', 'projects', 'work experience', 'contact'];
+const PAGES = ['home', 'skills', 'projects', 'work', 'contact'];
 
 const Header = () => {
   const [value, setValue] = useState(0);
@@ -18,31 +18,25 @@ const Header = () => {
 
   return (
     <div className="header">
-      <AppBar sx={{background: '#000000'}}>
-        <Toolbar>
-          {
-            isMatch ? (
-              <>
-                <Typography>AMBER MORRIS</Typography>
-                <HeaderDrawer />
-              </>
-            ) :
-                <Tabs
-                value={value}
-                onChange={(e, value) => setValue(value)}
-                textColor="inherit"
-                indicatorColor="secondary"
-              >
-                {PAGES.map((page, idx) => (
-                  <Link
-                    to="skills-container">
-                  <Tab key={page} label={page} />
-                  </Link>
-                ))}
-              </Tabs>
-          }
-        </Toolbar>
-      </AppBar>
+      { isMatch ? (
+         <>
+         <Typography>AMBER MORRIS</Typography>
+         <HeaderDrawer />
+       </>
+      ) :
+      PAGES.map((page, idx) => (
+        <Link
+          activeClass="active"
+          key={idx}
+          to={page}
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          isDynamic={true}>
+          {page}
+        </Link>))
+      }
     </div>
   );
 }

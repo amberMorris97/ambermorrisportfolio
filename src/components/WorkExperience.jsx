@@ -9,7 +9,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const WorkExperience = () => {
 
   return (
-    <div className="work-experience">
+    <div className="work-experience" name="work">
       <h1>Work Experience</h1>
       <section className="accordion">
         <Accordion>

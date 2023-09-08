@@ -8,49 +8,25 @@ import CodeOffIcon from '@mui/icons-material/CodeOff';
 const Skills = () => {
   console.log(skillsDetails)
   return (
-  <div name="skills" className="skills-section" id="skills-container">
+  <div name="skills" className="skills-section">
     <h1>Technical Skills</h1>
-    <Grid container spacing={2}>
+    <Grid container spacing={2} id="skills-container">
       {skillsDetails.map((skill, idx) => (
-        <Grid key={skill.title} item xs={12} md={6} lg={4}>
-          <Card sx={{ maxWidth: 345 }}>
+        <Grid key={skill.title} item xs={12} md={6} lg={5}>
+          <Card variant="outlined" sx={{ maxWidth: 345 }}>
             <CardContent>
               <Typography variant="h5" component="div">{skill.title}</Typography>
               <Typography variant="body2">
-                Technologies: {skill.items.map((skillItem) => (
-                  skillItem
-                ))}
+                {skill.description}
               </Typography>
             </CardContent>
           </Card>
       </Grid>
       ))}
-
-      {/* </Grid>
-      <Grid item xs={12} md={6} lg={4}>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">Back End</Typography>
-            <Typography variant="body2">
-              Technologies: Node.js, Java, Spring Boot, Python, Flask, GraphQL, MySQL, PostgreSQL, MongoDB
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-      <Grid item xs={12} md={6} lg={4}>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardContent>
-            <Typography variant="h5" component="div">Dev Tools</Typography>
-            <Typography variant="body2">
-              Technologies: AWS, Heroku, Git, JIRA, Docker, Kubernetes, Grafana
-            </Typography>
-          </CardContent>
-        </Card>
-      </Grid> */}
     </Grid>
     <div className="summary-blurb">
       <CodeIcon />
-        <p> I have over two years experience being cool fun and awesome</p>
+        <p>I have over 2 years experience developing Fullstack Software Applications, and over 1 year experience working in a professional environment.</p>
       <CodeOffIcon />
     </div>
   </div>

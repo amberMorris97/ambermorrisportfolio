@@ -7,8 +7,9 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText } from '@mui/material';
+import { Link } from 'react-scroll';
 
-const PAGES = ['home', 'skills', 'projects', 'work experience', 'contact'];
+const PAGES = ['home', 'skills', 'projects', 'work', 'contact'];
 
 const HeaderDrawer = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -22,7 +23,19 @@ const HeaderDrawer = () => {
           {PAGES.map((page, idx) => (
             <ListItemButton onClick={() => setOpenDrawer(!openDrawer)} key={idx}>
             <ListItemIcon>
-              <ListItemText>{page}</ListItemText>
+              <Link
+                activeClass="active"
+                key={idx}
+                to={page}
+                spy={true}
+                smooth={true}
+                offset={-125}
+                duration={500}
+                isDynamic={true}>
+              <ListItemText>
+                {page}
+                </ListItemText>
+                </Link>
             </ListItemIcon>
           </ListItemButton>
           ))}

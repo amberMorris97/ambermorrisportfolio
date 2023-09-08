@@ -22,7 +22,7 @@ const WorkExperience = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-
+              Developed applications and microservices for Redfin's iBuying team.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -36,8 +36,7 @@ const WorkExperience = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              I help beginner developers learn vanilla JavaScript and how to build React applications.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -49,6 +48,11 @@ const WorkExperience = () => {
           >
             <Typography>Freelance Developer (2021) </Typography>
           </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              I built and maintain a fullstack application for a business professional.
+            </Typography>
+          </AccordionDetails>
         </Accordion>
       </section>
     </div>

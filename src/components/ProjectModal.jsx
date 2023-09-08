@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Box, Typography, Button } from '@mui/material';
+import { Modal, Box, Typography, Button, Link } from '@mui/material';
 
 const ProjectModal = ({ modalContent, handleClose, open }) => {
 
@@ -27,8 +27,25 @@ console.log(modalContent)
             <Typography>
               {modalContent.title}
             </Typography>
-            <img
-              src={modalContent.full} />
+            <br />
+            <Typography>
+              {modalContent.description}
+            </Typography>
+            <br />
+            <Link
+              href={modalContent.github}
+              target="_blank"
+              rel="noopener">Github</Link>
+            <br />
+            {
+              modalContent.demo && (
+                <Link
+                href={modalContent.demo}
+                target="_blank"
+                rel="noopener">Live demo</Link>
+              ) }
+            <br />
+            { modalContent.photos ? modalContent.photos.map((photo) => ( <img src={photo} /> )) : <img src={modalContent.full} /> }
           </Box>
         </Modal>
     </div>

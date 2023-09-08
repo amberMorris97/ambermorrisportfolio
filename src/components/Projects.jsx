@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme } from '@mui/material';
 import { Link } from "react-router-dom";
 
 import ProjectModal from './ProjectModal.jsx';
@@ -8,6 +15,9 @@ import { projectDetails, skillsDetails } from './cardDetails';
 const Projects = () => {
   const [open, setOpen] = useState(false);
   const [modalContent, setModalContent] = useState('');
+
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.up('md'));
 
   const handleOpen = (e) => {
     projectDetails.forEach((project, idx) => {
@@ -19,7 +29,6 @@ const Projects = () => {
     setOpen(true);
     return;
   };
-
   const handleClose = () => setOpen(false);
 
   return (
@@ -30,18 +39,22 @@ const Projects = () => {
           <Grid
             key={idx}
             id={idx}
-            item xs={12}
+            item
+            xs={8}
+            sm={8}
+            md={4}
             lg={4}
             onClick={(e) => handleOpen(e, true)}>
             <Card sx={{ maxWidth: 345 }} id={idx}>
               <CardContent id={idx}>
-                <CardMedia
-                  sx={{ height: 140, width: 300 }}
-                  image={project.main}
-                  title="placeholder"
-                  id={idx}
-                />
-                  <Typography id={idx}>{project.title}</Typography>
+                { isMatch &&
+                  <CardMedia
+                    sx={{ height: 140, width: 250 }}
+                    image={project.main}
+                    title="placeholder"
+                    id={idx}
+                 /> }
+                <Typography id={idx}>{project.title}</Typography>
               </CardContent>
             </Card>
           </Grid>

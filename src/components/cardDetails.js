@@ -36,6 +36,24 @@ const skillsDetails = [
     title: 'Dev-Tools',
     description: 'Technologies: Amazon Web Services, Heroku, Git, JIRA, Docker, Kubernetes'
   }
+];
+
+const workDetails = [
+  {
+    title: 'Full-Stack Software Developer (2021-2022)',
+    details: `Worked on Redfin's iBuying team to build scalable, highly-reliable, cloud-based Java microservices and React UI features in a CI/CD environment.`,
+    icons: [],
+  },
+  {
+    title: 'Freelance Developer (2021-Present)',
+    details: 'I created and maintain a portfolio and blog application for business professional Jane Rosenzweig.',
+    icons: []
+  },
+  {
+    title: 'Tutor @ Wyzant (2021-Present)',
+    details: 'I tutor students and junior engineers in problem-solving skills, code debugging, and the following subjects: Vanilla JavaScript, React, Redux, Node.js, Express, and ES6.',
+    icons: [],
+  },
 ]
 
-module.exports = { projectDetails, skillsDetails };
+module.exports = { projectDetails, skillsDetails, workDetails };

@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <div className="contact-section" name="contact">
-      <h1>Open to full-stack engineering opportunities</h1>
+      <h1>Open to full stack engineering opportunities</h1>
       <section className="links">
           {links.map((link, idx) => (
             <Link

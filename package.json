@@ -1,8 +1,10 @@
 {
-  "name": "fynfapp",
+  "name": "ambermorrisportfolio",
   "version": "1.0.0",
   "description": "",
   "main": "src/server/index.js",
+  "private": "false",
+  "homepage": "https://ambermorris97.github.io/ambermorrisportfolio",
   "scripts": {
     "test:watch": "npx jest --watch --detectOpenHandles",
     "build-watch": "npx webpack --watch",

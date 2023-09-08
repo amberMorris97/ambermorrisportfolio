@@ -21,8 +21,9 @@ const Contact = () => {
     <div className="contact-section" name="contact">
       <h1>Open to full-stack engineering opportunities</h1>
       <section className="links">
-          {links.map((link) => (
+          {links.map((link, idx) => (
             <Link
+              key={idx}
               href={link.url}
               target="_black"
               rel="noopener">

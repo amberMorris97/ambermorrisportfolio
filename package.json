@@ -13,7 +13,7 @@
     "build": "npx webpack",
     "dev": "nodemon server/index.js",
     "start": "node src/server/server.js ",
-    "sass": "node-sass src/public/styles/main.scss src/public/styles/css/style.css -w"
+    "sass": "node-sass public/styles/main.scss public/styles/css/style.css -w"
   },
   "author": "",
   "license": "ISC",

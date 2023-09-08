@@ -1,0 +1,203 @@
+body {
+  background-color: rgb(14, 17, 17);
+  overflow-x: hidden;
+}
+body .modal-content {
+  width: 80%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.MuiTypography-root {
+  font-family: Source Code Pro !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.landing {
+  height: 100vh;
+  padding: 16px;
+  background: rgba(53, 56, 57, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing h1 {
+  font-size: 6em;
+}
+.landing h4 {
+  font-size: 1em;
+}
+
+.header {
+  padding: 16px;
+  display: flex;
+  gap: 10px;
+  color: #00ff29;
+  position: fixed;
+  margin-left: 50vw;
+  background-color: rgba(53, 55, 56, 0.8);
+}
+.header a:hover {
+  color: #c1fecb;
+  cursor: pointer;
+}
+
+.skills-section {
+  height: 100vh;
+  padding: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(53, 56, 57, 0.2);
+}
+.skills-section h1 {
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+.skills-section #skills-container {
+  justify-content: center;
+}
+.skills-section #skills-container :nth-child(1) {
+  color: #00ff29;
+}
+.skills-section #skills-container .summary-blurb {
+  margin-top: 5%;
+}
+.skills-section #skills-container .summary-blurb .MuiPaper-root {
+  background-color: rgba(53, 56, 57, 0.2) !important;
+}
+.skills-section #skills-container .summary-blurb .MuiCardContent-root {
+  background-color: rgba(53, 56, 57, 0.2);
+}
+.skills-section div .MuiGrid-root {
+  border-radius: "8px";
+  box-shadow: "0 2px 4px rgba(0, 0, 0, 0.1)";
+  padding: "16px";
+}
+.skills-section div .MuiCardContent-root {
+  background-color: rgba(53, 55, 56, 0.8);
+}
+.skills-section div .MuiTypography-root {
+  font-family: Source Code Pro !important;
+  color: white;
+  margin-left: 5%;
+}
+
+.project-section {
+  height: 50vh;
+  padding: 98px;
+  justify-content: center !important;
+}
+.project-section h1 {
+  color: white;
+  text-align: center;
+}
+.project-section div {
+  color: white;
+  text-align: center;
+}
+.project-section div .MuiPaper-root {
+  background-color: rgba(14, 17, 17, 0.1);
+}
+.project-section div .MuiPaper-root .MuiCardContent-root {
+  color: #00ff29;
+}
+
+.work-experience, .contact-section {
+  color: black;
+  text-align: center;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  color: white;
+  padding: 98px;
+  height: 100vh;
+}
+.work-experience .accordion-container {
+  max-width: 740px;
+  width: 100%;
+  align-self: center;
+}
+
+.contact-section {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: white;
+}
+.contact-section h1 {
+  width: 25vw;
+  text-align: left;
+}
+.contact-section .links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 2em;
+}
+.contact-section p {
+  color: white;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .project-section {
+    margin-top: 50%;
+  }
+  .work-experience {
+    text-align: center;
+    margin-top: 50%;
+  }
+  .skills-section {
+    margin-top: 50%;
+  }
+  .accordion .MuiAccordion-root {
+    width: 75vw !important;
+  }
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section h1 {
+    font-size: 1.5em;
+    align-self: baseline;
+  }
+  .contact-section .links, .contact-section p {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 820px) {
+  .contact-section {
+    color: white;
+  }
+}
+@media screen and (max-width: 899) {
+  .work-experience {
+    margin-top: 25vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+    font-size: large;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,264 +1,152 @@
 $main-font: Source Code Pro;
-$main-color: rgba(14, 17, 17, 0.1);
-$secondary-color: rgba(53, 55, 57, 0.2);
+$color-dark: rgba(14, 17, 17, 1);
+$color-lighter: rgba(53, 55, 57, 1);
+$overlay-dark: rgba(14, 17, 17, 0.2);
+$overlay-lighter: rgba(53, 55, 57, 0.4);
+$text-color: #00ff29;
+$main-font: Source Code Pro;
+$secondary-font: Poppins;
+
 body {
-  background-color: rgba(14, 17, 17, 1);
+  padding: 16px;
+  background-color: $color-dark;
+  color: white;
   overflow-x: hidden;
-
-  .modal-content {
-    width: 80%;
-  }
-}
-#app {
   font-family: $main-font;
-  color: white;
+
+  h1 {
+    text-align: center;
+  }
+
+  .MuiTypography-root {
+    font-family: $main-font;
+  }
+}
+
+.app {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25vh;
 
-  h1 {
-    padding: 16px;
-  }
-}
-.MuiTypography-root {
-  font-family: $main-font !important;
-}
-ul {
-  list-style: none;
-}
-.landing {
-  height: 100vh;
-  padding: 16px;
-  background: rgba(53, 56, 57, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    font-size: 6em;
-  }
-  h4 {
-    font-size: 1em;
-  }
-}
-.header {
-  padding: 16px;
-  display: flex;
-  gap: 10px;
-  color: #00ff29;
-  position: fixed;
-  margin-left: 50vw;
-  background-color: rgba(53, 55, 56, 0.8);
-  a:hover {
-    color: #c1fecb;
-    cursor: pointer;
-  }
-}
-.skills-section {
-  height: 100vh;
-  padding: 98px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(53, 56, 57, 0.2);
-  h1 {
-    color: white;
+  .header {
     text-align: center;
-    padding: 16px;
-  }
-  #skills-container {
-    justify-content: center;
-    :nth-child(1) {
-      color: #00ff29;
-    }
-
-    .summary-blurb {
-      margin-top: 5%;
-      .MuiPaper-root {
-        background-color: rgba(53, 56, 57, 0.2) !important;
-      }
-      .MuiCardContent-root {
-        background-color: rgba(53, 56, 57, 0.2);
-      }
-    }
-  }
-  div {
-
-    .MuiGrid-root {
-      border-radius: '8px';
-      box-shadow: '0 2px 4px rgba(0, 0, 0, 0.1)';
-      padding: '16px';
-    }
-    .MuiCardContent-root {
-      background-color: rgba(53, 55, 56, 0.8);
-    }
-    .MuiTypography-root {
-      font-family: $main-font !important;
-      color: white;
-      margin-left: 5%;
-    }
-  }
-}
-.project-section {
-  height: 50vh;
-  padding: 98px;
-  justify-content: center !important;
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  div {
-    color: white;
-    text-align: center;
-    .MuiPaper-root {
-      background-color: $main-color;
-
-      .MuiCardContent-root {
-        color: #00ff29;
-      }
-    }
-  }
-  // div {
-  //   justify-content: center;
-  //   .MuiPaper-root {
-  //     display: flex;
-  //     background: rgba(53, 55, 56, 0.5);
-  //   }
-  //   .MuiTypography-root {
-  //     font-family: $main-font !important;
-  //     color: white;
-  //     text-align: center;
-  //   }
-  // }
-}
-.work-experience,.contact-section {
-  color: black;
-  text-align: center;
-}
-.work-experience {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: black;
-  color: white;
-  padding: 98px;
-  height: 100vh;
-
-  .accordion-container {
-    max-width: 740px;
-    width: 100%;
-    align-self: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1000;
+    color: $text-color;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  // .accordion {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   padding: 20px;
-
-  //   .MuiAccordion-root {
-  //     width: 50vw;
-  //   }
-
-  //   .MuiAccordionSummary-content {
-  //     flex: 1 1 200px;
-  //     min-width: 200px;
-  //   }
-  // }
-}
-.contact-section {
-  font-family: Poppins;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  color: white;
-
-  h1 {
-    width: 25vw;
-    text-align: left;
-  }
-
-  .links {
+  .landing {
+    background-color: $overlay-lighter;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  p {
-    color: white;
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 600px){
-  .project-section {
-    margin-top: 50%;
-  }
-  .work-experience {
-    text-align: center;
-    margin-top: 50%;
-  }
   .skills-section {
-    margin-top: 50%;
+    .MuiPaper-root {
+      background-color: $overlay-lighter;
+      color: white !important;
+      border-radius: 8px solid;
+      border-color: white;
+    }
+    #skills-container {
+      :nth-child(1) {
+        color: $text-color;
+      }
+      :nth-child(2) {
+        color: white;
+      }
+    }
   }
-  .accordion
-  .MuiAccordion-root {
-    width: 75vw !important;
+
+  .project-section {
+    .MuiPaper-root {
+      background-color: $overlay-lighter;
+      color: $text-color;
+    }
+  }
+
+  .work-experience {
+    .accordion-container {
+      padding: 16px;
+    }
   }
 
   .contact-section {
+    background-color: $overlay-lighter;
+    font-family: $secondary-font;
     display: flex;
     flex-direction: column;
-    h1 {
-      font-size: 1.5em;
-      align-self: baseline;
+    justify-content: center;
+    align-items: center;
+
+    .links {
+      display: flex;
+      gap: 10px;
     }
-    .links,p {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MuiModal-root {
+    overflow: auto;
+  }
+
+  .modal-content {
+    width: 90% !important;
+  }
+  .contact-section {
+    text-align: center;
+    .links {
+      flex-direction: column;
+    }
+    p {
+      font-size: small;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    gap: 10px;
+    background-color: $overlay-lighter;
+    padding: 16px;
+    margin-right: 5%;
+    .active {
+      text-align: center;
+    }
+  }
+  .landing {
+    h1 {
+      font-size: 6em;
+    }
+    h4 {
       font-size: 1em;
     }
   }
-}
-
-@media screen and (min-width: 820px){
-  // .skills-section {
-  //   .summary-blurb {
-  //     p {
-  //       font-size: large !important;
-  //     }
-  //   }
-  // }
-
-  .contact-section {
-    color: white;
-  }
-
-}
-
-@media screen and (max-width: 899) {
+  .skills-section,
+  .project-section,
   .work-experience {
-    margin-top: 25vh;
+    h1 {
+      text-align: center;
+    }
   }
 }
-@media screen and (max-width: 1199px) {
 
-
-}
-@media screen and (min-width: 1200px){
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
+@media screen and (min-width: 1200px) {
+  #skills-container {
     justify-content: center;
-    font-size: large;
   }
-  // .skills-section{
-  //   align-content: baseline;
-  //   height: 50vh !important;
-  //   margin-top: 25%;
-  //   .summary-blurb
-  //   p {
-  //     font-size: large !important;
-  //   }
-  // }
-
+  .project-section {
+    text-align: center;
+  }
 }
+

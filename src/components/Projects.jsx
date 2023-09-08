@@ -36,21 +36,22 @@ const Projects = () => {
       <Grid container spacing={3}>
         {projectDetails.map((project, idx) => (
           <Grid
+            id={idx}
             key={idx}
             item xs={12}
             sm={6}
             md={4}
             onClick={(e) => handleOpen(e, true)}
           >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardContent>
+            <Card id={idx} sx={{ maxWidth: 345 }}>
+              <CardContent id={idx}>
                 <CardMedia
                   sx={{height: 0, paddingTop: '56.25%'}}
                   image={project.main}
                   title={project.title}
                   id={idx}
                   />
-                <Typography variant="h6">{project.title}</Typography>
+                <Typography id={idx} variant="h6">{project.title}</Typography>
               </CardContent>
             </Card>
           </Grid>

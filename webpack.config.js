@@ -10,7 +10,7 @@ module.exports = () => {
     mode: "development",
     output: {
       filename: 'bundle.js',
-      path: path.resolve('./src/public'),
+      path: path.resolve('./public'),
     },
 
     module: {

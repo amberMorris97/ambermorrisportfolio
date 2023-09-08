@@ -29,7 +29,7 @@ const HeaderDrawer = () => {
                 to={page}
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={0}
                 duration={500}
                 isDynamic={true}>
               <ListItemText>

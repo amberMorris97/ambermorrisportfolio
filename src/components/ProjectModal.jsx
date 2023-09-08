@@ -13,9 +13,11 @@ const ProjectModal = ({ modalContent, handleClose, open }) => {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
-    overflowY: 'auto',
+    overflow: 'auto',
     maxHeight: '80vh',
+    color: '#000'
   };
+
 console.log(modalContent)
   return (
     <div>

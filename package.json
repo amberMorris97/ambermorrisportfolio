@@ -9,7 +9,9 @@
     "build": "npx webpack",
     "dev": "nodemon server/index.js",
     "start": "node src/server/server.js ",
-    "sass": "node-sass src/public/styles/main.scss src/public/styles/css/style.css -w"
+    "sass": "node-sass src/public/styles/main.scss src/public/styles/css/style.css -w",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -44,6 +46,7 @@
     "babel-loader": "^8.2.2",
     "concurrently": "^6.2.0",
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.0.0",
     "nodemon": "^2.0.7",
     "npm": "^7.16.0",
     "style-loader": "^3.1.0",

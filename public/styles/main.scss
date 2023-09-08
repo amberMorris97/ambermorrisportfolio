@@ -56,6 +56,11 @@ body {
       border-radius: 8px solid;
       border-color: white;
     }
+    .summary-blurb {
+      p {
+        margin-left: 5%;
+      }
+    }
     #skills-container {
       :nth-child(1) {
         color: $text-color;

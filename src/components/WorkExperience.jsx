@@ -22,7 +22,7 @@ const WorkExperience = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Developed applications and microservices for Redfin's iBuying team.
+              Worked on Redfin's iBuying team to build scalable, highly-reliable, cloud-based Java microservices and React UI features in a CI/CD environment.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -36,7 +36,7 @@ const WorkExperience = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              I help beginner developers learn vanilla JavaScript and how to build React applications.
+            I tutor students and junior engineers in problem-solving skills, code debugging, and the following subjects: Vanilla JavaScript, React, Redux, Node.js, Express, and ES6.
             </Typography>
           </AccordionDetails>
         </Accordion>

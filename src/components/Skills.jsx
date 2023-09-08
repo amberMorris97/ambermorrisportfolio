@@ -26,7 +26,8 @@ const Skills = () => {
         <Card>
           <CardContent>
             <CodeIcon />
-              <Typography>I have over 2 years experience developing Fullstack Software Applications, and over 1 year experience working in a professional environment.</Typography>
+              <Typography>I have over 2 years of experience in developing fullstack software applications with a strong proficiency in React and JavaScript. As I'm still in the early stages of my career, I maintain a deep enthusiasm for continuous learning and expanding my skill set.
+              </Typography>
             <CodeOffIcon />
           </CardContent>
         </Card>

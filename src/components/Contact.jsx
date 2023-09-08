@@ -13,7 +13,7 @@ const Contact = () => {
     },
     {
       title: 'Resume',
-      url: 'static/documents/portfolioresume.pdf'
+      url: 'static/documents/amber_morris_swe_resume.pdf'
     }
   ]
 

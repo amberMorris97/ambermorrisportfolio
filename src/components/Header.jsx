@@ -31,7 +31,7 @@ const Header = () => {
           to={page}
           spy={true}
           smooth={true}
-          offset={-125}
+          offset={50}
           duration={500}
           isDynamic={true}>
           {page}

@@ -17,13 +17,12 @@ const Projects = () => {
   const [modalContent, setModalContent] = useState('');
 
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.up('md'));
+  const isMatch = useMediaQuery(theme.breakpoints.up('sm'));
 
   const handleOpen = (e) => {
     projectDetails.forEach((project, idx) => {
       if (idx === parseInt(e.target.id)) {
         setModalContent(project);
-        console.log(project.title)
       }
     });
     setOpen(true);
@@ -34,27 +33,24 @@ const Projects = () => {
   return (
     <div className="project-section" name="projects">
       <h1>Projects</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         {projectDetails.map((project, idx) => (
           <Grid
             key={idx}
-            id={idx}
-            item
-            xs={8}
-            sm={8}
+            item xs={12}
+            sm={6}
             md={4}
-            lg={4}
-            onClick={(e) => handleOpen(e, true)}>
-            <Card sx={{ maxWidth: 345 }} id={idx}>
-              <CardContent id={idx}>
-                { isMatch &&
-                  <CardMedia
-                    sx={{ height: 140, width: 250 }}
-                    image={project.main}
-                    title="placeholder"
-                    id={idx}
-                 /> }
-                <Typography id={idx}>{project.title}</Typography>
+            onClick={(e) => handleOpen(e, true)}
+          >
+            <Card sx={{ maxWidth: 345 }}>
+              <CardContent>
+                <CardMedia
+                  sx={{height: 0, paddingTop: '56.25%'}}
+                  image={project.main}
+                  title={project.title}
+                  id={idx}
+                  />
+                <Typography variant="h6">{project.title}</Typography>
               </CardContent>
             </Card>
           </Grid>

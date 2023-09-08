@@ -10,14 +10,14 @@ const projectDetails = [
   {
     title: 'Dig It',
     main: 'static/images/digit0.png',
-    description: 'Fullstack application built to collect data about up and coming artists for promotion. Technologies used: JavaScript, React, Redux, Node.js, HTML5, CSS, SASS, Python, Flask, PostgreSQL, SpotifyAPI, Docker',
+    description: 'Fullstack application built to collect data about up and coming artists for promotion by allowing users to search Spotify for artists to submit. Technologies used: JavaScript, React, Redux, Node.js, HTML5, CSS, SASS, Python, Flask, PostgreSQL, SpotifyAPI',
     photos: ['static/images/digit1.png', 'static/images/digit2.png', 'static/images/digit3.png'],
     github: 'https://github.com/ambermorris97/digit'
   },
   {
     title: 'Blockchains Explained',
     main: 'static/images/blockchain0.png',
-    description: 'Simple fullstack application to teach readers about Blockchain Technology. Technologies used: JavaScript, React, Redux, Node.js, Spline, HTML5, CSS, SASS, Web3js, Blockchain API, Docker',
+    description: 'Simple fullstack application to teach readers about Blockchain Technology by fetching and displaying Blockchain data and explaining each step. Technologies used: JavaScript, React, Redux, Node.js, Spline, HTML5, CSS, SASS, Web3js, Blockchain API, Docker',
     full: 'static/images/blockchainfull.png',
     github: 'https://github.com/ambermorris97/blockchains-explained'
   }

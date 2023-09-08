@@ -11,7 +11,7 @@ const WorkExperience = () => {
   return (
     <div className="work-experience" name="work">
       <h1>Work Experience</h1>
-      <section className="accordion">
+      <section className="accordion-container">
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

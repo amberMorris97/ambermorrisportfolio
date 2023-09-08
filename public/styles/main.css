@@ -53,10 +53,24 @@ body .MuiTypography-root {
 }
 .app .project-section .MuiPaper-root {
   background-color: rgba(53, 55, 57, 0.4);
-  color: #00ff29;
+  color: white;
+  border: 2px solid;
+  border-color: #00ff29;
+}
+.app .project-section .MuiCardContent-root {
+  text-align: center;
 }
 .app .work-experience .accordion-container {
   padding: 16px;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+.app .work-experience .accordion-container svg {
+  color: #00ff29;
+}
+.app .work-experience .accordion-container .MuiPaper-root {
+  color: white;
+  background-color: rgba(53, 55, 57, 0.4);
 }
 .app .contact-section {
   background-color: rgba(53, 55, 57, 0.4);

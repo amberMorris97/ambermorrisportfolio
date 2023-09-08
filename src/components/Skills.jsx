@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Grid, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
-import { skillsDetails } from './cardDetails';
+import { skillsDetails } from './content/cardDetails';
 import CodeIcon from '@mui/icons-material/Code';
 import CodeOffIcon from '@mui/icons-material/CodeOff';
 

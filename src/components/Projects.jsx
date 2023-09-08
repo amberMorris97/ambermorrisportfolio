@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 
 import ProjectModal from './ProjectModal.jsx';
-import { projectDetails, skillsDetails } from './cardDetails';
+import { projectDetails, skillsDetails } from './content/cardDetails';
 
 const Projects = () => {
   const [open, setOpen] = useState(false);

@@ -1,4 +1,7 @@
-const projectDetails = [
+import React from 'react';
+import { js_icon, react_icon } from './icons';
+
+export const projectDetails = [
   {
     title: 'Jane Rosenzweig',
     main: '/static/images/JR_MAIN.png',
@@ -23,7 +26,7 @@ const projectDetails = [
   }
 ];
 
-const skillsDetails = [
+export const skillsDetails = [
   {
     title: 'Front-End',
     description: 'Technologies: JavaScript, React, Redux, HTML5, CSS, SASS, Material-UI',
@@ -38,22 +41,22 @@ const skillsDetails = [
   }
 ];
 
-const workDetails = [
+export const workDetails = [
   {
     title: 'Full-Stack Software Developer (2021-2022)',
     details: `Worked on Redfin's iBuying team to build scalable, highly-reliable, cloud-based Java microservices and React UI features in a CI/CD environment.`,
-    icons: [],
+    icons: [js_icon, react_icon],
   },
   {
     title: 'Freelance Developer (2021-Present)',
     details: 'I created and maintain a portfolio and blog application for business professional Jane Rosenzweig.',
     icons: []
+    // icons: [js_icon, react_icon, redux_icon, node_icon, sass_icon]
   },
   {
     title: 'Tutor @ Wyzant (2021-Present)',
     details: 'I tutor students and junior engineers in problem-solving skills, code debugging, and the following subjects: Vanilla JavaScript, React, Redux, Node.js, Express, and ES6.',
-    icons: [],
+    icons: []
+    // icons: [js_icon, react_icon, redux_icon, html_icon, css_icon],
   },
 ]
-
-module.exports = { projectDetails, skillsDetails, workDetails };

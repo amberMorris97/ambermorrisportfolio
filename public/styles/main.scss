@@ -74,13 +74,29 @@ body {
   .project-section {
     .MuiPaper-root {
       background-color: $overlay-lighter;
-      color: $text-color;
+      color: white;
+      border: 2px solid;
+      border-color: $text-color;
+    }
+    .MuiCardContent-root {
+      text-align: center;
     }
   }
 
   .work-experience {
     .accordion-container {
       padding: 16px;
+      margin: 0 auto;
+      max-width: 50vw;
+
+      svg {
+        color: $text-color;
+      }
+
+      .MuiPaper-root {
+        color: white;
+        background-color: $overlay-lighter;
+      }
     }
   }
 

@@ -6,10 +6,12 @@ import {
   faHtml5,
   faSass,
   faCss,
-  faRedux
-} from '@fortawesome/free-brands-svg-icons'; // Import the FontAwesome icons you need
-
-export const py_icon = <FontAwesomeIcon icon="fa-brands fa-python" />;
+  faRedux,
+  faJava,
+  faNodeJs,
+  faAws,
+  faDocker
+} from '@fortawesome/free-brands-svg-icons';
 
 export const js_icon = <FontAwesomeIcon icon={faSquareJs} />;
 console.log("js icon" + js_icon)
@@ -18,17 +20,17 @@ export const react_icon = <FontAwesomeIcon icon={faReact} />;
 
 export const html_icon = <FontAwesomeIcon icon={faHtml5} />;
 
-// export const sass_icon = <FontAwesomeIcon icon={solid("sass")} />;
+export const sass_icon = <FontAwesomeIcon icon={faSass} />;
 
-// export const css_icon = <FontAwesomeIcon icon={solid("css")} />;
+export const css_icon = <FontAwesomeIcon icon={faCss} />;
 
-// export const redux_icon = <FontAwesomeIcon icon={solid("redux")} />;
+export const redux_icon = <FontAwesomeIcon icon={faRedux} />;
 
-// export const java_icon = <FontAwesomeIcon icon={solid("java")} />;
+export const java_icon = <FontAwesomeIcon icon={faJava} />;
 
-// export const node_icon = <FontAwesomeIcon icon={solid("node-js")} />;
+export const node_icon = <FontAwesomeIcon icon={faNodeJs} />;
 
-// export const aws_icon = <FontAwesomeIcon icon={solid("aws")} />;
+export const aws_icon = <FontAwesomeIcon icon={faAws} />;
 
-// export const docker_icon = <FontAwesomeIcon icon={solid("docker")} />;
+export const docker_icon = <FontAwesomeIcon icon={faDocker} />;
 

@@ -149,7 +149,7 @@ body {
   }
 
   .modal-content {
-    width: 90% !important;
+    width: 60% !important;
   }
 
   .landing {
@@ -296,6 +296,12 @@ body {
       display: flex;
       gap: 25vw !important;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skills-section {
+    padding: 32px;
   }
 }
 

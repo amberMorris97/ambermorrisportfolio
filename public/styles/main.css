@@ -54,6 +54,21 @@ body .MuiTypography-root {
 .app .skills-section #skills-container :nth-child(2) {
   color: white;
 }
+.app .project-section {
+  padding: 16px;
+}
+.app .project-section .MuiGrid-container {
+  justify-content: center;
+}
+.app .project-section .MuiGrid-container .arrows {
+  display: flex;
+  gap: 48px;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+.app .project-section .MuiGrid-container .arrows svg {
+  cursor: pointer;
+}
 .app .project-section .MuiPaper-root {
   background-color: rgba(53, 55, 57, 0.4);
   color: white;
@@ -118,6 +133,18 @@ body .MuiTypography-root {
   }
   .project-section {
     justify-content: center;
+    padding: 16px;
+  }
+  .project-section .MuiGrid-root {
+    justify-content: center;
+  }
+  .project-section .MuiGrid-root .arrows {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+  }
+  .project-section .MuiGrid-root .arrows svg {
+    cursor: pointer;
   }
   .work-experience .work-icons {
     display: flex;
@@ -125,6 +152,11 @@ body .MuiTypography-root {
   }
   .work-experience .work-icons svg {
     font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 899px) {
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 5vw;
   }
 }
 @media screen and (min-width: 900px) {
@@ -149,6 +181,36 @@ body .MuiTypography-root {
   .work-experience h1 {
     text-align: center;
   }
+  .project-section {
+    text-align: center;
+  }
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 15vw;
+  }
+  .project-section .arrows {
+    display: flex;
+    gap: 25vw !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .project-section {
+    text-align: center;
+  }
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 20vw;
+  }
+  .project-section .arrows {
+    display: flex;
+    gap: 25vw !important;
+  }
 }
 @media screen and (min-width: 1200px) {
   #skills-container {
@@ -156,5 +218,61 @@ body .MuiTypography-root {
   }
   .project-section {
     text-align: center;
+  }
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 25vw;
+  }
+  .project-section .arrows {
+    display: flex;
+    gap: 25vw !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 27vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 29vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 30vw;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 33vw;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .project-section .MuiGrid-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section .MuiGrid-container .project-card {
+    margin-left: 34vw;
   }
 }/*# sourceMappingURL=main.css.map */

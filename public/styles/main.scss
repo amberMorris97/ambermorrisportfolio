@@ -76,6 +76,20 @@ body {
   }
 
   .project-section {
+    padding: 16px;
+    .MuiGrid-container {
+      justify-content: center;
+
+      .arrows {
+        display: flex;
+        gap: 48px;
+        justify-content: space-evenly;
+        font-size: 24px;
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
     .MuiPaper-root {
       background-color: $overlay-lighter;
       color: white;
@@ -154,6 +168,21 @@ body {
 
   .project-section {
     justify-content: center;
+    padding: 16px;
+
+    .MuiGrid-root {
+      justify-content: center;
+
+      .arrows {
+        display: flex;
+        gap: 48px;
+        justify-content: space-between;
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .work-experience {
@@ -162,6 +191,16 @@ body {
       gap: 10px !important;
       svg {
         font-size: 16px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .project-section {
+    .MuiGrid-container {
+      .project-card {
+        margin-left: 5vw;
       }
     }
   }
@@ -193,6 +232,43 @@ body {
       text-align: center;
     }
   }
+  .project-section {
+    text-align: center;
+
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 15vw;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      gap: 25vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-section {
+    text-align: center;
+
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 20vw;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      gap: 25vw !important;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -201,6 +277,86 @@ body {
   }
   .project-section {
     text-align: center;
+
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 25vw;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      gap: 25vw !important;
+    }
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 27vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 29vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 30vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 33vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 34vw;
+      }
+    }
+  }
+}
+
 

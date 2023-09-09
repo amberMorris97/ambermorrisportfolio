@@ -12,6 +12,7 @@ import {
   faAws,
   faDocker
 } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const js_icon = <FontAwesomeIcon icon={faSquareJs} />;
 console.log("js icon" + js_icon)
@@ -33,4 +34,8 @@ export const node_icon = <FontAwesomeIcon icon={faNodeJs} />;
 export const aws_icon = <FontAwesomeIcon icon={faAws} />;
 
 export const docker_icon = <FontAwesomeIcon icon={faDocker} />;
+
+export const arrow_right = <FontAwesomeIcon icon={faArrowRight} />;
+
+export const arrow_left = <FontAwesomeIcon icon={faArrowLeft} />;
 

@@ -30,7 +30,7 @@ export const projectDetails = [
   {
     title: 'Blockchains Explained',
     main: 'static/images/blockchain0.png',
-    description: 'Simple full stack application to teach readers about Blockchain Technology by fetching and displaying Blockchain data and explaining each step. Technologies used: JavaScript, React, Redux, Node.js, Spline, HTML5, CSS, SASS, Web3js, Blockchain API, Docker',
+    description: 'Simple full stack application to teach readers about Blockchain Technology by fetching and displaying real-time block data and explaining each step. Technologies used: JavaScript, React, Redux, Node.js, Spline, HTML5, CSS, SASS, Web3js, Blockchain API, Docker',
     full: 'static/images/blockchainfull.png',
     github: 'https://github.com/ambermorris97/blockchains-explained'
   }

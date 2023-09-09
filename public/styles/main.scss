@@ -170,8 +170,12 @@ body {
     justify-content: center;
     padding: 16px;
 
-    .MuiGrid-root {
+    .MuiGrid-container {
       justify-content: center;
+
+      .project-card {
+        margin-right: 10vw;
+      }
 
       .arrows {
         display: flex;
@@ -196,11 +200,35 @@ body {
   }
 }
 
+@media screen and (min-width: 601px) {
+  .project-section {
+    .MuiGrid-container {
+      .project-card {
+        margin-right: 10vw !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .project-section {
+    .MuiGrid-container {
+      .project-card {
+        margin-left: 13vw !important;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 899px) {
   .project-section {
     .MuiGrid-container {
       .project-card {
-        margin-left: 5vw;
+        margin-left: 10vw;
+      }
+      .arrows {
+        gap: 96px !important;
       }
     }
   }
@@ -240,7 +268,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 15vw;
+        margin-left: 15vw !important;
       }
     }
 
@@ -260,7 +288,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 20vw;
+        margin-left: 20vw !important;
       }
     }
 
@@ -283,7 +311,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 25vw;
+        margin-left: 23vw !important;
       }
     }
 
@@ -294,6 +322,50 @@ body {
   }
 }
 
+@media screen and (min-width: 1230px) {
+  #skills-container {
+    justify-content: center;
+  }
+  .project-section {
+    text-align: center;
+
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 24vw !important;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      gap: 25vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .project-section {
+    text-align: center;
+
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 26vw !important;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      gap: 25vw !important;
+    }
+  }
+}
+
+
 @media screen and (min-width: 1400px) {
   .project-section {
     .MuiGrid-container {
@@ -301,7 +373,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 27vw;
+        margin-left: 27vw !important;
       }
     }
   }
@@ -314,7 +386,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 29vw;
+        margin-left: 28vw !important;
       }
     }
   }
@@ -327,7 +399,20 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 30vw;
+        margin-left: 30vw !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .project-section {
+    .MuiGrid-container {
+      justify-content: center;
+      align-items: center;
+
+      .project-card {
+        margin-left: 31.5vw !important;
       }
     }
   }
@@ -340,7 +425,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 33vw;
+        margin-left: 32.5vw !important;
       }
     }
   }
@@ -353,7 +438,7 @@ body {
       align-items: center;
 
       .project-card {
-        margin-left: 34vw;
+        margin-left: 34vw !important;
       }
     }
   }

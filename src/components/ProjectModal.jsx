@@ -54,7 +54,10 @@ console.log(modalContent)
                   rel="noopener">Live demo</Link>
               )}
             <br />
-            { modalContent.photos ? modalContent.photos.map((photo) => ( <img src={photo} /> )) : <img src={modalContent.full} /> }
+            { modalContent.full && <img src={modalContent.full} /> }
+            {modalContent.photos.map((photo) => (
+              <img src={photo} />
+            ))}
           </Box>
         </Modal>
     </div>

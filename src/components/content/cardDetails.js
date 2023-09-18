@@ -17,6 +17,7 @@ export const projectDetails = [
     main: '/static/images/JR_MAIN.png',
     description: 'Full stack application built for a client needing a business site with blog features. Technologies used: JavaScript, React, Redux, Node.js, HTML5, SASS, MongoDB, Heroku',
     full: 'static/images/JR_FULL.png',
+    photos: ['static/images/jr_b1.png', 'static/images/jr_b2.png'],
     github: 'https://github.com/ambermorris97/JR-Website',
     demo: 'http://janerosenzweig.com'
   },

@@ -19,10 +19,10 @@ const Header = () => {
   return (
     <div className="header">
       { isMatch ? (
-         <>
-         <Typography>AMBER MORRIS</Typography>
-         <HeaderDrawer />
-       </>
+        <>
+          <Typography>AMBER MORRIS</Typography>
+          <HeaderDrawer />
+        </>
       ) :
       PAGES.map((page, idx) => (
         <Link

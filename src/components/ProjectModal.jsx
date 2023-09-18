@@ -40,12 +40,19 @@ console.log(modalContent)
               rel="noopener">Github</Link>
             <br />
             {
+              modalContent.api && (
+                <Link
+                  href={modalContent.api}
+                  target="_blank"
+                  rel="noopener">API</Link>
+            )}
+            {
               modalContent.demo && (
                 <Link
-                href={modalContent.demo}
-                target="_blank"
-                rel="noopener">Live demo</Link>
-              ) }
+                  href={modalContent.demo}
+                  target="_blank"
+                  rel="noopener">Live demo</Link>
+              )}
             <br />
             { modalContent.photos ? modalContent.photos.map((photo) => ( <img src={photo} /> )) : <img src={modalContent.full} /> }
           </Box>

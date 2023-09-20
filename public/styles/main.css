@@ -5,6 +5,9 @@ body {
   overflow-x: hidden;
   font-family: Source Code Pro;
 }
+body .modal-content {
+  width: 75vw !important;
+}
 body h1 {
   text-align: center;
 }
@@ -39,6 +42,9 @@ body .MuiTypography-root {
 .app .landing h4 {
   color: #00ff29;
 }
+.app .skills-section {
+  padding: 48px;
+}
 .app .skills-section .MuiPaper-root {
   background-color: rgba(53, 55, 57, 0.4);
   color: white !important;
@@ -56,27 +62,17 @@ body .MuiTypography-root {
 }
 .app .project-section {
   padding: 16px;
-}
-.app .project-section .MuiGrid-container {
-  justify-content: center;
-}
-.app .project-section .MuiGrid-container .arrows {
   display: flex;
-  gap: 48px;
-  justify-content: space-evenly;
-  font-size: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
-.app .project-section .MuiGrid-container .arrows svg {
+.app .project-section .section-title .MuiTypography-root {
+  font-size: 3em;
+  padding: 16px;
+}
+.app .project-section .MuiBox-root p {
   cursor: pointer;
-}
-.app .project-section .MuiPaper-root {
-  background-color: rgba(53, 55, 57, 0.4);
-  color: white;
-  border: 2px solid;
-  border-color: #00ff29;
-}
-.app .project-section .MuiCardContent-root {
-  text-align: center;
 }
 .app .work-experience .accordion-container {
   padding: 16px;
@@ -236,6 +232,7 @@ body .MuiTypography-root {
 @media screen and (min-width: 1200px) {
   #skills-container {
     justify-content: center;
+    margin-top: 24px;
   }
   .project-section {
     text-align: center;
@@ -339,5 +336,8 @@ body .MuiTypography-root {
   }
   .project-section .MuiGrid-container .project-card {
     margin-left: 34vw !important;
+  }
+  .skills-section {
+    padding: 0 500px !important;
   }
 }/*# sourceMappingURL=main.css.map */

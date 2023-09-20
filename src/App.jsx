@@ -7,20 +7,12 @@ import WorkExperience from './components/WorkExperience.jsx';
 import Contact from './components/Contact.jsx';
 
 const App = () => {
-  const [display, setDisplay] = useState('landing');
-  const displayObj = {
-    landing: Landing,
-  }
-  const CurrentDisplay = displayObj[display];
-
-
-
   return (
     <div className="app">
       <Header />
       <Landing />
       <Skills />
-      <Projects setDisplay={setDisplay} />
+      <Projects />
       <WorkExperience />
       <Contact />
     </div>

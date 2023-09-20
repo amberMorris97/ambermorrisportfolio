@@ -11,8 +11,8 @@ const Skills = () => {
     <h1>Technical Skills</h1>
     <Grid container spacing={2} id="skills-container">
       {skillsDetails.map((skill, idx) => (
-        <Grid key={skill.title} item sm={6} lg={3}>
-          <Card variant="outlined" sx={{ maxWidth: 345 }}>
+        <Grid key={skill.title} item sm={6} lg={6}>
+          <Card variant="outlined" sx={{ maxWidth: 700, minHeight: 140 }}>
             <CardContent>
               <Typography variant="h5" component="div">{skill.title}</Typography>
               <Typography variant="body2">
@@ -22,7 +22,7 @@ const Skills = () => {
           </Card>
       </Grid>
       ))}
-      <Grid item xs={12} md={6} lg={4} className="summary-blurb">
+      <Grid item xs={12} md={6} lg={6} className="summary-blurb">
         <Card>
           <CardContent>
             <CodeIcon />

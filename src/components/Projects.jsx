@@ -46,7 +46,7 @@ const Projects = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="project-section">
+    <div name="projects" className="project-section">
       <span className="section-title">
         <Typography>Projects</Typography>
       </span>

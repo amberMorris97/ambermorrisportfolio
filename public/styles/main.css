@@ -68,7 +68,7 @@ body .MuiTypography-root {
   gap: 24px;
 }
 .app .project-section .section-title .MuiTypography-root {
-  font-size: 3em;
+  font-size: 2em;
   padding: 16px;
 }
 .app .project-section .MuiBox-root p {

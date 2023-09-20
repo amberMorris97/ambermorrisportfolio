@@ -45,7 +45,7 @@ export const skillsDetails = [
   },
   {
     title: 'Back-End',
-    description: 'Technologies: Node.js, Java, Spring Framework, Python, Flask, PostgreSQL, MySQL, MongoDB, GraphQL',
+    description: 'Technologies: Node.js, Express, Java, Spring Framework, Python, Flask, PostgreSQL, MySQL, MongoDB, GraphQL',
   },
   {
     title: 'Dev-Tools',

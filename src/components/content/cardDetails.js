@@ -49,7 +49,7 @@ export const skillsDetails = [
   },
   {
     title: 'Dev-Tools',
-    description: 'Technologies: Amazon Web Services, Heroku, Git, JIRA, Docker, Kubernetes'
+    description: 'Technologies: Webpack, Babel, Amazon Web Services, Heroku, Git, JIRA, Docker, Kubernetes'
   }
 ];
 
